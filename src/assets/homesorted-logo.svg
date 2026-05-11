@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="HomeSortedLogoTitle">
+  <title id="HomeSortedLogoTitle">HomeSorted logo</title>
+  <defs>
+    <linearGradient id="hsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="hsGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="url(#hsGradient)" />
+  <path d="M40 36h40v10H40z" fill="#fff" opacity="0.9"/>
+  <path d="M44 42v34h32" stroke="#fff" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M36 70h48v10H36z" fill="#fff" opacity="0.6"/>
+  <circle cx="60" cy="60" r="20" fill="url(#hsGradient2)" opacity="0.9" />
+  <text x="60" y="72" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="32" fill="#fff">HS</text>
+</svg>
