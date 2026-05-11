@@ -39,6 +39,7 @@ function App() {
         className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 rounded-full bg-[#F97316] px-5 py-4 text-sm font-semibold text-white shadow-glow transition-transform duration-200 hover:-translate-y-1 md:hidden"
         aria-label="Book a nearby worker now"
       >
+        
         Book now
       </a>
     </div>

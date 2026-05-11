@@ -33,16 +33,16 @@ const HowItWorks: React.FC = () => {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.96 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.08 }}
-              whileHover={{ y: -8 }}
-              className="glass-card relative rounded-[28px] border border-[rgba(255,255,255,0.12)] p-8 shadow-soft transition-all duration-300"
+              whileHover={{ y: -6 }}
+              className="glass-card relative rounded-[28px] border border-[rgba(255,255,255,0.12)] p-8 shadow-soft transition-all duration-300 hover:shadow-glow"
             >
               <div className="absolute -top-5 -left-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#F97316] text-white shadow-glow">
                 {index + 1}
               </div>
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-3xl bg-[#F97316]/15 text-[#F97316] shadow-glow">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-[#F97316] to-[#FB923C] text-white shadow-glow">
                 <step.icon className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
