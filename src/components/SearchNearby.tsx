@@ -6,8 +6,13 @@ const SearchNearby: React.FC = () => {
   const tags = ['Electrician', 'Plumber', 'AC Repair', 'Carpenter', 'Painter', 'Mechanic'];
 
   return (
-    <section id="search" className="py-20 bg-[#0F172A] text-white">
-      <div className="container mx-auto px-4">
+    <section
+      id="search"
+      className="relative py-20 bg-[#0F172A] bg-cover bg-center bg-no-repeat text-white"
+      style={{ backgroundImage: "url('/local-service-background.png')" }}
+    >
+      <div className="absolute inset-0 bg-[#0F172A]/80" />
+      <div className="relative container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
