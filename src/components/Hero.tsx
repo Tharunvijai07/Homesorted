@@ -3,8 +3,12 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative overflow-hidden bg-[#0F172A]">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#111827] to-[#1E293B]" />
+    <section
+      id="home"
+      className="relative overflow-hidden bg-[#0F172A] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/hero-background.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A]/80 via-[#111827]/80 to-[#1E293B]/80" />
       <div className="absolute -top-16 -left-16 h-72 w-72 rounded-full bg-[#F97316]/15 blur-3xl" />
       <div className="absolute bottom-10 right-0 h-80 w-80 rounded-full bg-[#FB923C]/10 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-4 py-28 sm:py-32">
@@ -38,15 +42,15 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-4 text-center sm:grid-cols-3">
-              <div className="rounded-3xl border border-[#FFFFFF]/10 bg-white/5 p-5 shadow-soft">
+              <div className="glass-card rounded-3xl p-5 shadow-soft">
                 <p className="text-3xl font-bold text-white">10K+</p>
                 <p className="text-sm text-[#CBD5E1]">Bookings delivered</p>
               </div>
-              <div className="rounded-3xl border border-[#FFFFFF]/10 bg-white/5 p-5 shadow-soft">
+              <div className="glass-card rounded-3xl p-5 shadow-soft">
                 <p className="text-3xl font-bold text-white">50+</p>
                 <p className="text-sm text-[#CBD5E1]">Cities covered</p>
               </div>
-              <div className="rounded-3xl border border-[#FFFFFF]/10 bg-white/5 p-5 shadow-soft">
+              <div className="glass-card rounded-3xl p-5 shadow-soft">
                 <p className="text-3xl font-bold text-white">4.9/5</p>
                 <p className="text-sm text-[#CBD5E1]">Average rating</p>
               </div>
@@ -59,9 +63,9 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex items-center justify-center"
           >
-            <div className="relative w-full max-w-2xl overflow-hidden rounded-[40px] border border-[rgba(255,255,255,0.1)] bg-[#111827]/80 p-6 shadow-soft backdrop-blur-xl">
+            <div className="glass-card relative w-full max-w-2xl overflow-hidden rounded-[40px] p-6 shadow-soft">
               <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_center,_rgba(249,115,22,0.18),transparent_40%)]" />
-              <div className="relative rounded-[32px] bg-[#0F172A]/90 p-6">
+              <div className="relative rounded-[32px] bg-[#0F172A]/70 p-6">
                 <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-4">
                   <div>
                     <p className="text-sm uppercase tracking-[0.32em] text-[#CBD5E1]">Live booking</p>
@@ -71,7 +75,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 <div className="mt-6 space-y-4">
-                  <div className="rounded-[28px] bg-[#111827] p-5 shadow-soft">
+                  <div className="glass-card rounded-[28px] p-5 shadow-soft">
                     <div className="flex items-center justify-between gap-4">
                       <div>
                         <p className="text-sm uppercase tracking-[0.24em] text-[#CBD5E1]">Worker</p>
@@ -80,7 +84,7 @@ const Hero: React.FC = () => {
                       <div className="rounded-3xl bg-[#FB923C]/15 px-4 py-2 text-sm font-semibold text-[#FDBA74]">4.9 ★</div>
                     </div>
                   </div>
-                  <div className="rounded-[28px] bg-[#111827] p-5 shadow-soft">
+                  <div className="glass-card rounded-[28px] p-5 shadow-soft">
                     <div className="flex items-center justify-between gap-4">
                       <div>
                         <p className="text-sm uppercase tracking-[0.24em] text-[#CBD5E1]">ETA</p>
@@ -91,7 +95,7 @@ const Hero: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mt-7 rounded-[32px] border border-[rgba(255,255,255,0.1)] bg-[#0F172A]/80 p-6">
+                <div className="glass-card mt-7 rounded-[32px] p-6">
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <p className="text-xs uppercase tracking-[0.24em] text-[#CBD5E1]">Current service</p>
@@ -100,11 +104,11 @@ const Hero: React.FC = () => {
                     <div className="rounded-3xl bg-[#FDBA74]/15 px-4 py-2 text-sm font-semibold text-[#FDBA74]">₹ 549</div>
                   </div>
                   <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                    <div className="rounded-3xl bg-[#111827] p-4">
+                    <div className="glass-card rounded-3xl p-4">
                       <p className="text-sm text-[#CBD5E1]">Location</p>
                       <p className="mt-2 text-base font-semibold text-white">Bandra West, Mumbai</p>
                     </div>
-                    <div className="rounded-3xl bg-[#111827] p-4">
+                    <div className="glass-card rounded-3xl p-4">
                       <p className="text-sm text-[#CBD5E1]">Status</p>
                       <p className="mt-2 text-base font-semibold text-white">Confirmed & en route</p>
                     </div>

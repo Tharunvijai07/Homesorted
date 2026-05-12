@@ -13,8 +13,13 @@ const WorkerVerification: React.FC = () => {
   ];
 
   return (
-    <section id="verified" className="py-20 bg-[#0F172A]">
-      <div className="container mx-auto px-4">
+    <section
+      id="verified"
+      className="relative py-20 bg-[#0F172A] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/verified-background.png')" }}
+    >
+      <div className="absolute inset-0 bg-[#0F172A]/75" />
+      <div className="relative container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}

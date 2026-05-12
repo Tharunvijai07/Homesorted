@@ -25,8 +25,13 @@ const CustomerReviews: React.FC = () => {
   ];
 
   return (
-    <section id="reviews" className="py-20 bg-[#1E293B] text-white">
-      <div className="container mx-auto px-4">
+    <section
+      id="reviews"
+      className="relative py-20 bg-[#1E293B] bg-cover bg-center bg-no-repeat text-white"
+      style={{ backgroundImage: "url('/reviews-background.png')" }}
+    >
+      <div className="absolute inset-0 bg-[#0F172A]/80" />
+      <div className="relative container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +56,7 @@ const CustomerReviews: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group rounded-[32px] border border-[rgba(255,255,255,0.12)] bg-[#0F172A]/80 p-8 shadow-soft transition hover:-translate-y-2 hover:shadow-glow"
+              className="glass-card group rounded-[32px] border border-[rgba(255,255,255,0.12)] p-8 shadow-soft transition hover:-translate-y-2 hover:shadow-glow"
             >
               <div className="flex items-center justify-between mb-6">
                 <div>

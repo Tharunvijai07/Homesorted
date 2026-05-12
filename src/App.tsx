@@ -8,7 +8,6 @@ import Features from './components/Features';
 import AppPreview from './components/AppPreview';
 import CustomerReviews from './components/CustomerReviews';
 import Testimonials from './components/Testimonials';
-import Statistics from './components/Statistics';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
@@ -28,7 +27,6 @@ function App() {
         <AppPreview />
         <CustomerReviews />
         <Testimonials />
-        <Statistics />
         <FAQ />
         <FinalCTA isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       </main>

@@ -71,8 +71,13 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-[#0F172A]">
-      <div className="container mx-auto px-4">
+    <section
+      id="faq"
+      className="relative py-20 bg-[#0F172A] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/faq-background.png')" }}
+    >
+      <div className="absolute inset-0 bg-[#0F172A]/80" />
+      <div className="relative container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +104,7 @@ const FAQ: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="group overflow-hidden rounded-[28px] border border-[rgba(255,255,255,0.12)] bg-[#111827]/90 shadow-soft transition duration-500 ease-out hover:-translate-y-1 hover:scale-[1.01] hover:border-[#F97316]/40 hover:bg-[#111827]/95 hover:shadow-[0_30px_60px_-20px_rgba(249,115,22,0.45)]"
+              className="glass-card group overflow-hidden rounded-[28px] border border-[rgba(255,255,255,0.12)] p-0 shadow-soft transition duration-500 ease-out hover:-translate-y-1 hover:scale-[1.01] hover:border-[#F97316]/40 hover:bg-[#111827]/95 hover:shadow-[0_30px_60px_-20px_rgba(249,115,22,0.45)]"
             >
               <button
                 onClick={() => toggleFAQ(index)}

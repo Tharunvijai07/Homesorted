@@ -61,8 +61,13 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-[#0F172A]">
-      <div className="mx-auto max-w-7xl px-4">
+    <section
+      id="features"
+      className="relative py-20 bg-[#0F172A] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/features-background.png')" }}
+    >
+      <div className="absolute inset-0 bg-[#0F172A]/75" />
+      <div className="relative mx-auto max-w-7xl px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +94,7 @@ const Features: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="group rounded-[32px] border border-white/10 bg-[#111827]/80 p-8 shadow-soft transition duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:border-[#F97316]/40 hover:bg-[#111827]/95 hover:shadow-[0_30px_60px_-20px_rgba(249,115,22,0.45)]"
+                className="glass-card group rounded-[32px] p-8 shadow-soft transition duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:border-[#F97316]/40 hover:bg-[#111827]/70 hover:shadow-[0_30px_60px_-20px_rgba(249,115,22,0.45)]"
               >
                 <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-3xl bg-[#F97316]/10 text-[#F97316] shadow-soft transition duration-500 group-hover:bg-[#F97316] group-hover:text-[#0F172A] group-hover:shadow-[0_20px_40px_-20px_rgba(249,115,22,0.8)]">
                   <Icon className="h-8 w-8" />

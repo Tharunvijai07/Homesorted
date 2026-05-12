@@ -133,9 +133,9 @@ const PreRegisterModal: React.FC<PreRegisterModalProps> = ({ isOpen, onClose }) 
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm"
         >
           <motion.div
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.95, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 20, opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={(e) => e.stopPropagation()}
             className="relative w-full max-w-md rounded-[32px] border border-[rgba(249,115,22,0.3)] bg-[#111827]/95 p-8 shadow-glow max-h-[90vh] overflow-y-auto"

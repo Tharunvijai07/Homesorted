@@ -24,8 +24,13 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#0F172A]" id="services">
-      <div className="container mx-auto px-4">
+    <section
+      id="services"
+      className="relative py-20 bg-[#0F172A] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/category-background.png')" }}
+    >
+      <div className="absolute inset-0 bg-[#0F172A]/70" />
+      <div className="relative container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
