@@ -24,20 +24,27 @@ const Hero: React.FC = () => {
             </span>
 
             <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Instant access to electricians, plumbers, AC technicians and trusted local workers.
+              Instant access to trusted local workers nearby.
             </h1>
 
             <p className="max-w-2xl text-lg text-[#CBD5E1] leading-relaxed sm:text-xl">
-              Book verified technicians for same-day home repair, maintenance and emergency services with transparent pricing and live status updates.
+              Book verified electricians, plumbers, AC technicians, and home service experts with transparent pricing, live status updates, and same-day availability.
             </p>
 
-            <div className="inline-flex">
+            <div className="flex flex-col gap-4 sm:flex-row">
               <a
-                href="#download"
+                href="#features"
                 className="inline-flex items-center justify-center rounded-full bg-[#F97316] px-8 py-4 text-base font-semibold text-[#0F172A] transition hover:bg-[#FB923C]"
-                aria-label="Download the app"
+                aria-label="Explore features"
               >
-                Download the app
+                Explore services
+              </a>
+              <a
+                href="#faq"
+                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white transition hover:bg-white/10"
+                aria-label="Read FAQ"
+              >
+                Learn more
               </a>
             </div>
 

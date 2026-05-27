@@ -6,7 +6,7 @@ interface FinalCTAProps {
   setIsModalOpen: (value: boolean) => void;
 }
 
-const FinalCTA: React.FC<FinalCTAProps> = ({ isModalOpen, setIsModalOpen }) => {
+const FinalCTA: React.FC<FinalCTAProps> = ({ setIsModalOpen }) => {
   return (
     <section id="download" className="relative overflow-hidden bg-[#0F172A] py-20">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.18),transparent_25%)]" />

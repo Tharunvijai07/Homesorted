@@ -7,7 +7,7 @@ interface NavbarProps {
   setIsModalOpen: (value: boolean) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isModalOpen, setIsModalOpen }) => {
+const Navbar: React.FC<NavbarProps> = ({ setIsModalOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 

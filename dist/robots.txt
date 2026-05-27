@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.labourapp.com/sitemap.xml
-Host: www.labourapp.com
+Sitemap: https://www.homesorted.com/sitemap.xml
+Host: www.homesorted.com

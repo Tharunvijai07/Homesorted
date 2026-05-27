@@ -104,22 +104,34 @@ const PreRegisterModal: React.FC<PreRegisterModalProps> = ({ isOpen, onClose }) 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validate form
     if (!validateForm()) {
       return;
     }
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Pre-registration data:', formData);
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('http://localhost:4000/api/pre-register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Submission failed');
+      }
+
       setFormData({ name: '', phone: '', email: '', state: '' });
       setErrors({});
       setGeneralError('');
       onClose();
-    }, 1000);
+    } catch (error) {
+      console.error('Submission error:', error);
+      setGeneralError(error instanceof Error ? error.message : 'Unable to submit. Try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

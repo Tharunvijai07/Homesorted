@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               HomeSorted
             </h3>
             <p className="text-[#CBD5E1] text-sm sm:text-base leading-relaxed max-w-md">
-              Connecting you with trusted local workers for electricians, plumbers, painters, carpenters and more.
+              Trusted local workers on demand for home repairs, maintenance, and emergency help.
             </p>
           </div>
 
@@ -48,10 +48,9 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <div className="mb-4">
+            <div className="mb-4 flex items-center justify-between gap-4">
               <h4 className="font-semibold text-white">Legal</h4>
             </div>
-
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>

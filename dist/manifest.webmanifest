@@ -1,6 +1,6 @@
 {
-  "name": "Labour App",
-  "short_name": "LabourApp",
+  "name": "HomeSorted",
+  "short_name": "HomeSorted",
   "description": "Connect with trusted local workers and book services instantly.",
   "start_url": "/",
   "display": "standalone",
